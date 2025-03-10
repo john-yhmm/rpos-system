@@ -3,37 +3,44 @@ import { FuseNavigationItem } from '@fuse/components/navigation';
 
 export const defaultNavigation: FuseNavigationItem[] = [
     {
-        id   : 'example',
-        title: 'Example',
-        type : 'basic',
-        icon : 'heroicons_outline:chart-pie',
-        link : '/example'
-    }
+        id: 'company-website',
+        title: 'Company Website',
+        type: 'collapsable',
+        icon: 'heroicons_outline:globe-alt',
+        children: [
+            {
+                id: 'company-website.home-page',
+                title: 'Home',
+                type: 'basic',
+                link: '/company-website/home-page',
+            },
+        ],
+    },
 ];
 export const compactNavigation: FuseNavigationItem[] = [
     {
-        id   : 'example',
-        title: 'Example',
-        type : 'basic',
-        icon : 'heroicons_outline:chart-pie',
-        link : '/example'
-    }
+        id: 'company-website',
+        title: 'Company Website',
+        type: 'collapsable',
+        icon: 'heroicons_outline:globe-alt',
+        children: [],
+    },
 ];
 export const futuristicNavigation: FuseNavigationItem[] = [
     {
-        id   : 'example',
-        title: 'Example',
-        type : 'basic',
-        icon : 'heroicons_outline:chart-pie',
-        link : '/example'
-    }
+        id: 'company-website',
+        title: 'Company Website',
+        type: 'collapsable',
+        icon: 'heroicons_outline:globe-alt',
+        children: [],
+    },
 ];
 export const horizontalNavigation: FuseNavigationItem[] = [
     {
-        id   : 'example',
-        title: 'Example',
-        type : 'basic',
-        icon : 'heroicons_outline:chart-pie',
-        link : '/example'
-    }
+        id: 'company-website',
+        title: 'Company Website',
+        type: 'collapsable',
+        icon: 'heroicons_outline:globe-alt',
+        children: [],
+    },
 ];
