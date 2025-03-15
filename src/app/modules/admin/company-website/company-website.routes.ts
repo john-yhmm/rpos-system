@@ -3,6 +3,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { WorkPageComponent } from './work/work-page.component';
 import { BlogPageComponent } from './blog/blog-page.component';
 import { ServiceDetailsComponent } from './service-details/service-details.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 export default [
     {
@@ -25,5 +26,9 @@ export default [
     {
         path: 'service-details',
         component: ServiceDetailsComponent,
-    }
+    },
+    {
+        path: 'about-us',
+        component: AboutUsComponent,
+    },
 ] as Routes;
