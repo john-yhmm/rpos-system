@@ -4,6 +4,7 @@ import { WorkPageComponent } from './work/work-page.component';
 import { BlogPageComponent } from './blog/blog-page.component';
 import { ServiceDetailsComponent } from './service-details/service-details.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { ServicesComponent } from './services/services.component';
 
 export default [
     {
@@ -31,4 +32,8 @@ export default [
         path: 'about-us',
         component: AboutUsComponent,
     },
+    {
+        path: 'services',
+        component: ServicesComponent,
+    }
 ] as Routes;

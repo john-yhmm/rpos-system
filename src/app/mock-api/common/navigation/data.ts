@@ -38,6 +38,12 @@ export const defaultNavigation: FuseNavigationItem[] = [
                 type: 'basic',
                 link: '/company-website/about-us',
             },
+            {
+                id: 'company-website.services',
+                title: 'Services',
+                type: 'basic',
+                link: '/company-website/services',
+            }
         ],
     },
 ];
