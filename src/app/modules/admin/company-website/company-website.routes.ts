@@ -6,6 +6,7 @@ import { ServiceDetailsComponent } from './service-details/service-details.compo
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { MemberDetailsComponent } from './member-details/member-details.component';
 
 export default [
     {
@@ -40,5 +41,9 @@ export default [
     {
         path: 'contact-us',
         component: ContactUsComponent,
+    },
+    {
+        path: 'member-details',
+        component: MemberDetailsComponent,
     }
 ] as Routes;

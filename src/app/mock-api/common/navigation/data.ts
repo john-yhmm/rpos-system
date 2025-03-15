@@ -50,6 +50,12 @@ export const defaultNavigation: FuseNavigationItem[] = [
                 type: 'basic',
                 link: '/company-website/contact-us',
             },
+            {
+                id: 'company-website.member-details',
+                title: 'Member Details',
+                type: 'basic',
+                link: '/company-website/member-details',
+            }
         ],
     },
 ];
