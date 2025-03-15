@@ -7,6 +7,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { MemberDetailsComponent } from './member-details/member-details.component';
+import { WorkDetailsComponent } from './work-details/work-details.component';
+
 
 export default [
     {
@@ -45,5 +47,9 @@ export default [
     {
         path: 'member-details',
         component: MemberDetailsComponent,
-    }
+    },
+    {
+        path: 'work-details',
+        component: WorkDetailsComponent,
+    },
 ] as Routes;
