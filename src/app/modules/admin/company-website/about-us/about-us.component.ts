@@ -10,7 +10,7 @@ import { CommonModule } from "@angular/common";
 })
 export class AboutUsComponent
 {
-    imagePath = "/public/images/pages/company-website/about-us/member.png";
+    imagePath = "/images/pages/company-website/about-us/member.png";
 
     allMembers = [
         { name: "John Ye Htet Maung Maung", position: "Developer", image: this.imagePath },
