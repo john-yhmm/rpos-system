@@ -2,10 +2,105 @@
     <!-- Main -->
     <div class="flex-auto p-6 sm:p-10">
         <!-- CONTENT GOES HERE -->
-        <div
-            class="h-400 max-h-400 min-h-400 rounded-2xl border-2 border-dashed border-gray-300"
-        >
-    Blog Page
-    </div>
+            <!-- Navigation Buttons -->
+            <div class="flex gap-4">
+                <button routerLink="/all-works" class="px-6 py-3 text-white bg-gray-700 rounded-lg active hover:bg-gray-800 transition">All Works</button>
+                <button routerLink="/web-development" class="px-6 py-3 text-white bg-gray-700 rounded-lg hover:bg-gray-800 transition">Web Development</button>
+                <button routerLink="/mobile-development" class="px-6 py-3 text-white bg-gray-700 rounded-lg hover:bg-gray-800 transition">Mobile Development</button>
+                <button routerLink="/web-mobile-designs" class="px-6 py-3 text-white bg-gray-700 rounded-lg hover:bg-gray-800 transition">Web & Mobile Designs</button>
+            </div>
+
+            <!-- Main Image Section -->
+            <div class="relative mt-10">
+                <img src="images/pages/company-website/blog/network.png" class="w-full rounded-lg h-100" alt="Network Image">
+                <div class="absolute bottom-5 left-5 text-white">
+                    <h4 class="text-lg">10 July 2023</h4>
+                    <h3 class="text-2xl font-bold">Blog Title</h3>
+                </div>
+            </div>
+
+            <!-- Blog Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+                <div class="overflow-hidden rounded-lg max-h-[300px]">
+                    <img src="/images/pages/company-website/blog/coding3.png" class="w-full h-full object-cover" alt="Typing">
+                </div>
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-lg">10 July 2023</h4>
+                        <h3 class="text-2xl font-bold">Blog Title</h3>
+                    </div>
+                    <p class="text-gray-700">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum nam corporis tempora, deleniti reprehenderit laborum laboriosam molestiae iste voluptatem numquam cupiditate provident odio hic tempore alias similique, placeat enim et!</p>
+                    <button routerLink="/read-more" class="px-6 py-2 text-white bg-gray-700 rounded-lg w-1/2 active hover:bg-gray-800 transition">READ MORE</button>
+                </div>
+            </div>
+
+            <!-- Popular News Section -->
+            <div class="container mx-auto mt-8 px-4">
+                <div class="mb-8">
+                    <h1 class="text-2xl font-bold">Popular News</h1>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="mb-4">
+                        <img src="images/pages/company-website/blog/circuit.png" class="w-full rounded-lg mb-3" alt="">
+                        <p class="text-gray-500">10 July 2023</p>
+                        <h5 class="text-lg font-semibold mb-2">Blog Title</h5>
+                        <p class="text-gray-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, reiciendis est. Illum ut minus iure.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <img src="images/pages/company-website/blog/coding1.png" class="w-full rounded-lg mb-3" alt="">
+                        <p class="text-gray-500">10 July 2023</p>
+                        <h5 class="text-lg font-semibold mb-2">Blog Title</h5>
+                        <p class="text-gray-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, reiciendis est. Illum ut minus iure.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <img src="images/pages/company-website/blog/coding2.png" class="w-full rounded-lg mb-3" alt="">
+                        <p class="text-gray-500">10 July 2023</p>
+                        <h5 class="text-lg font-semibold mb-2">Blog Title</h5>
+                        <p class="text-gray-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, reiciendis est. Illum ut minus iure.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <img src="images/pages/company-website/blog/layout.png" class="w-full rounded-lg mb-3" alt="">
+                        <p class="text-gray-500">10 July 2023</p>
+                        <h5 class="text-lg font-semibold mb-2">Blog Title</h5>
+                        <p class="text-gray-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, reiciendis est. Illum ut minus iure.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <img src="images/pages/company-website/blog/drawing.jpg" class="w-full rounded-lg mb-3" alt="">
+                        <p class="text-gray-500">10 July 2023</p>
+                        <h5 class="text-lg font-semibold mb-2">Blog Title</h5>
+                        <p class="text-gray-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, reiciendis est. Illum ut minus iure.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <img src="images/pages/company-website/blog/working.png" class="w-full rounded-lg mb-3" alt="">
+                        <p class="text-gray-500">10 July 2023</p>
+                        <h5 class="text-lg font-semibold mb-2">Blog Title</h5>
+                        <p class="text-gray-700">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, reiciendis est. Illum ut minus iure.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="mt-20">
+                <nav aria-label="Page navigation">
+                    <ul class="flex justify-center space-x-2">
+                        <li>
+                            <a href="#" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md">&lsaquo; Prev</a>
+                        </li>
+                        <li><a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-md">1</a></li>
+                        <li><a href="#" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md">2</a></li>
+                        <li><a href="#" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md">...</a></li>
+                        <li><a href="#" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md">10</a></li>
+                        <li>
+                            <a href="#" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md">Next &rsaquo;</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
     </div>
 </div>
