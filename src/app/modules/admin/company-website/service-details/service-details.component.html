@@ -1,1 +1,97 @@
-<p>service-details works!</p>
+<main class="container mx-auto px-6 sm:px-10 py-10">
+    <!-- Big banner with description -->
+    <section class="mb-16">
+      <img src="/images/pages/company-website/service-details/web-dev.png" alt="Web Development" class="w-full rounded-2xl object-cover" style="aspect-ratio: 3/1;">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mt-8">
+        <h1 class="col-span-3 text-5xl font-bold text-gray-900">Web Development</h1>
+        <p class="col-span-9 text-gray-700 text-lg leading-relaxed">
+            Jorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos
+        </p>
+      </div>
+    </section>
+  
+    <!-- Service Details x 2 -->
+    <section class="mb-16">
+      <div class="grid grid-cols-1 md:grid-cols-11 gap-8 mb-16">
+        <div class="col-span-5">
+          <img src="/images/pages/company-website/service-details/service-1.png" alt="Service Detail 1" class="w-full rounded-2xl object-cover" style="aspect-ratio: 200/100;">
+        </div>
+        <div class="col-span-6">
+          <h1 class="text-4xl font-bold text-gray-900">Service Detail 1</h1>
+          <p class="mt-4 text-gray-700 text-lg leading-relaxed">
+            Jorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-11 gap-8">
+        <div class="col-span-6">
+          <h1 class="text-4xl font-bold text-gray-900">Service Detail 2</h1>
+          <p class="mt-4 text-gray-700 text-lg leading-relaxed">
+            Jorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos
+          </p>
+        </div>
+        <div class="col-span-5">
+          <img src="/images/pages/company-website/service-details/service-1.png" alt="Service Detail 2" class="w-full rounded-2xl object-cover" style="aspect-ratio: 200/100;">
+        </div>
+      </div>
+    </section>
+  
+    <!-- Our Work -->
+    <section class="mb-16">
+      <h1 class="text-4xl font-bold text-gray-900">Our Work</h1>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+        <p class="col-span-2 text-gray-700 text-lg leading-relaxed">
+            Jorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dign
+        </p>
+        <a routerLink="/company-website/work-page" routerLinkActive="active" ariaCurrentWhenActive="page" class="col-span-1 text-lg text-right underline text-blue-600">
+          Explore More
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+        <div>
+          <img src="/images/pages/company-website/service-details/travel-and-tour.png" alt="Travel & Tour" class="w-full rounded-2xl object-cover" style="aspect-ratio: 552/300;">
+          <h3 class="mt-4 text-2xl font-bold text-gray-900">Travel & Tour Website</h3>
+          <p class="text-gray-700">Web Development</p>
+        </div>
+        <div>
+          <img src="/images/pages/company-website/service-details/beauty-and-gift.png" alt="Beauty & Gift" class="w-full rounded-2xl object-cover" style="aspect-ratio: 552/300;">
+          <h3 class="mt-4 text-2xl font-bold text-gray-900">Beauty & Gift Website</h3>
+          <p class="text-gray-700">Web Design</p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Our Talented Developers -->
+    <section class="mb-16">
+      <h1 class="text-4xl font-bold text-gray-900">Our Talented Developers</h1>
+      <p class="mt-4 text-gray-700 text-lg leading-relaxed">
+        Jorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dign
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-8">
+        <div *ngFor="let dev of [1, 2, 3, 4]" class="text-center">
+          <img [src]="'/images/pages/company-website/service-details/dev-image-' + dev + '.png'" alt="Developer" class="w-full rounded-2xl object-cover" style="aspect-ratio: 1/1;">
+          <h4 class="mt-4 text-xl font-bold text-gray-900">Member Name</h4>
+          <p class="text-gray-700">Position</p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Our Services -->
+    <section>
+      <h1 class="text-4xl font-bold text-gray-900">Our Services</h1>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+        <div>
+          <img src="/images/pages/company-website/service-details/mobile-development.png" alt="Mobile Development" class="w-full rounded-2xl object-cover" style="aspect-ratio: 2/1;">
+          <h4 class="mt-4 text-xl font-bold text-gray-900">Mobile Development</h4>
+        </div>
+        <div>
+          <img src="/images/pages/company-website/service-details/seo.png" alt="SEO" class="w-full rounded-2xl object-cover" style="aspect-ratio: 2/1;">
+          <h4 class="mt-4 text-xl font-bold text-gray-900">SEO</h4>
+        </div>
+        <div>
+          <img src="/images/pages/company-website/service-details/web-and-mobile.png" alt="Web & Mobile Design" class="w-full rounded-2xl object-cover" style="aspect-ratio: 2/1;">
+          <h4 class="mt-4 text-xl font-bold text-gray-900">Web & Mobile Design</h4>
+        </div>
+      </div>
+    </section>
+</main>
