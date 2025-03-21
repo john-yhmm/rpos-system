@@ -1,11 +1,35 @@
-<div class="flex min-w-0 flex-auto flex-col">
-    <!-- Main -->
-    <div class="flex-auto p-6 sm:p-10">
-        <!-- CONTENT GOES HERE -->
-        <div
-            class="h-400 max-h-400 min-h-400 rounded-2xl border-2 border-dashed border-gray-300"
-        >
-    About Us
+<div class="m-10">
+    <img src="/public/images/pages/company-website/about-us/About-us-header.png" class="object-cover rounded-lg mb-10" alt="" style="aspect-ratio: 3/1;">
+    <div class="grid grid-cols-3 mb-26">
+        <div>
+            <p class="text-4xl font-semibold">About Us</p>
+        </div>
+        <div class="col-span-2">
+            <p class="text-base">
+                Jorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos
+            </p>
+        </div>
     </div>
+    <div class="grid grid-cols-5 mb-26">
+        <div class="col-span-3 mr-20">
+            <p class="text-4xl font-semibold mb-3"> Mission And Vision</p>
+            <p class="text-base"> Jorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</p>
+        </div>
+        <div class="col-span-2">
+            <img src="/public/images/pages/company-website/about-us/mission-vision.png" class="object-cover rounded-lg" alt="">
+        </div>
+    </div>
+    <p class="text-center text-4xl font-semibold mb-15"> Team Members</p>
+    <div>
+        <button type="button" (click)="filterMembers('All Members')" [ngClass]="{'text-white bg-gray-800': selectedRole === 'All Members', 'text-black bg-gray-200': selectedRole !== 'All Members'}" class="font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2"> All Members</button>
+        <button type="button" (click)="filterMembers('Developer')" [ngClass]="{'text-white bg-gray-800': selectedRole === 'Developer', 'text-black bg-gray-200': selectedRole !== 'Developer'}" class="font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2"> Developers </button>
+        <button type="button" (click)="filterMembers('Designer')" [ngClass]="{'text-white bg-gray-800': selectedRole === 'Designer', 'text-black bg-gray-200': selectedRole !== 'Designer'}" class="font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2"> Designers</button>
+    </div>
+    <div class="grid grid-cols-4 gap-2 mt-10">
+        <div *ngFor="let member of members" class="mb-4">
+            <img [src]="member.image" class="object-cover rounded-md mb-2" style="aspect-ratio: 1/1;" alt="">
+            <p class="text-lg font-medium mb-2">{{member.name}}</p>
+            <p class="text-sm">{{member.position}}</p>
+        </div>
     </div>
 </div>
